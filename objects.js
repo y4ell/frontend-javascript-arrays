@@ -7,6 +7,10 @@
 // Zorg ervoor dat de volgende string in de terminal wordt gelogd:
 // "Hoi! Ik ben <voornaam>, ik ben <leeftijd> jaar oud."
 
+const firstName = "Yael"
+const age = 31
+
+console.log("Hoi! Ik ben " + firstName + ", ik ben " + age + " jaar oud.")
 
 // === Opdracht 3: bekijk het volgende object ===
 
@@ -21,11 +25,21 @@ const product = {
 
 // 3a. Log de naam van de serie in de terminal.
 
+console.log(product.series);
+
+
 // 3b. Overschrijf de oude waarde van de property color ("creme") naar "roze". Log het object in de terminal om te checken of het gelukt is.
+
+product.color = "roze";
+console.log(product.color);
 
 // 3c. Log de tweede materiaalsoort ("kunststof") in de terminal
 
+console.log(product.material[1]);
+
 // 1d. Log de afmetingen (b-h-d) in de terminal
+
+console.log(product["b-h-d"]);
 
 
 // === Opdracht 4 ===
@@ -34,4 +48,5 @@ const product = {
 // "De Smeg Waterkoker is gemaakt van roestvrijstaal en kunststof"
 
 
-
+const description = "De " + product.productName + " is gemaakt van " + product.material[0] + " en " + product.material[1];
+console.log(description);
